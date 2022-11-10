@@ -3,6 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <title>Navbar-sukanya</title>
+        <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://fontawesome.com/v4/icon/bars">
+        
     </head>
     <style>
         body{
@@ -13,30 +16,58 @@
         nav{
             margin-top:30px;
             display:flex;
+            flex-direction: row;
+            justify-content:space-between;
             padding-inline:3px;
             align-items:center;
         }
         .read{
             font-size:2rem;
             font-family:"Inter";
-            position:absolute;
+            /* position:absolute; */
             font-weight:600px;
             text-align: center;
+            letter-spacing:1rem;
         }
         .nav_2{
-            position:absolute;
-            
+            /* position:absolute; 
+            right:25px; */
+            display:flex;
+            justify-content:space-between;
+            gap:1rem;
         }
+        .more{
+             display:block;
+             text-align:center;
+        }
+        @media screen and (max-width:450px){
+            .nav_2{
+            background-color:red;
+            position: absolute !important;
+            top:10vh !important;
+            left:0 !important;
+            width:40% !important;
+            flex-direction:column;
+            padding:2rem;
+            gap:1rem;
+        }
+    }
+        .bar{
+            display:none;
+            width: 20px;
+        }
+
     </style>
     <body>
     <nav>
-        <div class="read">RISE
-        </div>
+        <div class="read">RISE </div>
         <div class ="nav_2">
-            <p></p>Home</p>
+            <p>Home</p>
             <p>About</p>
             <p>Contact</p>
-            <button="readmore">Readmore</button>
+            <button class="more">Readmore</button>
         </div>
-        <div class="">
+        <div class="bar"></div>
+    </nav>
     </body>
+    </html>

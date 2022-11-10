@@ -10,7 +10,8 @@
         *{
             margin:0;
             padding:0;
-            box-sizing: border-box;
+            box-sizing:border-box;
+            font-family: 'Inter';
         }
         .content{
             background-color: black;
@@ -18,19 +19,55 @@
             flex-direction:row;
             align-items: center;
             justify-content: space-between;
+            height:15vh;
+            padding:5%;
         }
 
         .content .logo{
+            letter-spacing: 1em;
             color:white;
             font-family:'inter';
+            font-size: 2.5rem;
+            font-weight: bold;
         }
         .nav_content{
-           display:inline;
+            display:flex;
+            flex-direction:row;
+            align-items: center;
+            justify-content:space-evenly;
+            gap:3em;
+            font-size:1rem;
+            
         }
-        .nav_content ul li a{
-            text-decoration: none;
+        .nav_content .item{
             color:white;
+            
         }
+        @media(max-width:900px){
+            .content{
+
+
+            }
+            .nav_content{
+                position:absolute;
+                top:15vh;
+                left:0;
+                background-color: black;
+                color:white;
+                width:100%;
+                flex-direction:column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                padding:5%;
+            }
+        }
+        button{
+            padding:1%;
+            font-weight: bold;
+            font-size: 0.7rem;
+            width:7rem;
+        }
+        
     </style>
 </head>
 <body>
@@ -40,12 +77,10 @@
                 <p>RISE</p>
             </div>
             <div class="nav_content">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <button>READ MORE</button>
-                </ul>
+                <div class="item">Home</div>
+                <div class="item">About</div>
+                <div class="item">Contact</div>
+                <button>READ MORE</button>
             </div>
 
         </div>

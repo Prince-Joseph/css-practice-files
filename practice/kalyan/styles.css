@@ -4,6 +4,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     height: 15vh;
+    padding-right: 10px;
 }
 
 *{
@@ -16,6 +17,13 @@ body{
     background-color: #1E1E1E;
 }
 
+.box2{
+    display:flex;
+    flex-direction: row;
+    gap:2rem;
+    color:white;
+}
+
 .rise{
     display: flex;
     flex-direction: row;
@@ -25,3 +33,12 @@ body{
     justify-content: space-between;
     padding-left: 3rem;
 }
+
+.rm{
+    background-color: white;
+    color: black;
+    padding: 2px 45px;
+    text-decoration: none;
+    text-align: center;
+}
+
