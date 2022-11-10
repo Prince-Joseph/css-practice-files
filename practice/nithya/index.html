@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
         *{
@@ -39,20 +40,25 @@
             font-size:1rem;
             
         }
+        .content i{
+            display:none;
+        }
         .nav_content .item{
             color:white;
             
         }
+        button{
+            padding:1%;
+            font-weight: bold;
+            font-size: 0.7rem;
+            width:7rem;
+        }
         @media(max-width:900px){
-            .content{
-
-
-            }
             .nav_content{
                 position:absolute;
                 top:15vh;
                 left:0;
-                background-color: black;
+                background-color: rgba(0,0,0,0.9);
                 color:white;
                 width:100%;
                 flex-direction:column;
@@ -60,12 +66,14 @@
                 justify-content: flex-start;
                 padding:5%;
             }
+            .content i{
+                display:block;
+                color:white;
+                /* align-items: center; */
+            }
         }
-        button{
-            padding:1%;
-            font-weight: bold;
-            font-size: 0.7rem;
-            width:7rem;
+        .white{
+            color: white;
         }
         
     </style>
@@ -76,13 +84,15 @@
             <div class="logo">
                 <p>RISE</p>
             </div>
+
             <div class="nav_content">
                 <div class="item">Home</div>
                 <div class="item">About</div>
                 <div class="item">Contact</div>
                 <button>READ MORE</button>
             </div>
-
+            
+            <i class="fa-solid fa-bars white"></i>
         </div>
     </nav>
     
