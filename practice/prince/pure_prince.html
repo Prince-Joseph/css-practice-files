@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat</title>
+</head>
+<body>
+    <div class="parent">
+        <p class="t1">bizzare1</p>
+        <p class="t2">bizzare2</p>
+        <p class="t3">bizzare3</p>
+        <p class="t4">bizzare4</p>
+        <p class="t5">bizzare5</p>
+
+        <a class="btn"> Read More</a>
+        <a class="green-box">
+            <span>Akuma1</span>
+            <span class="t6">Akuma2</span>
+        </a>
+    </div>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        
+        *{
+            /* resetting default styles */
+            box-sizing: border-box;
+            margin:0;
+            padding: 0;
+            color: white;
+            /* font-family: 'Inter'; */
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+        }
+        .t6{
+            position: absolute;
+            right: 45px;
+            font-size: 2rem;
+
+        }
+
+        .green-box{
+            /* display: flex;
+            flex-direction: row;
+            justify-content: space-around; */
+
+            position: absolute;
+            background-color: #384839;
+            color: white;
+            padding : 10 5 5 10;
+            width: 400px;
+            height: 50px;
+            bottom: 0;
+            right: 0;
+        }
+        .btn{
+            display: block;
+            position: absolute;
+            top: 100px;
+            left: 600px;
+            background-color: white;
+            color: black;
+            /* center text */
+            text-align: center;
+            /* padding: 45px 45px 45px 45px; */
+            padding: 45px 100px;
+            opacity: 0.2;
+        }
+
+        .parent{
+            background-color: pink;
+            background-image: url('https://images.pexels.com/photos/979247/pexels-photo-979247.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: 0% 80%;
+            width: 100%;
+        }
+
+        .t1{
+            position: absolute;
+            top: 45px;
+            left: 40rem;
+            transform: rotate(-45deg);
+            
+        }
+        .t2{
+            position: absolute;
+            top: 45px;
+            left: 35rem;
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+        }
+        .t3{
+            position: absolute;
+            top: 45px;
+            left: 20rem;
+        }
+        .t4{
+            position: absolute;
+            top: 45px;
+            left: 1rem;
+        }
+        .t5{
+            position: absolute;
+            top: 45px;
+            left: 50rem;
+        }
+
+
+    </style>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    
+</head>
+<style>
+    div{
+        border: 3px solid blue;
+        margin: 5px;
+    }
+
+    div > div{
+        border: 3px solid pink;
+
+    }
+
+    div > div > div{
+        border: 3px solid green;
+
+    }
+    .mummy{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-inline: 20px;
+        align-items: center;
+
+    }
+
+    .nav_stuff{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav_stuff > div{
+        margin-inline: 10px;
+    }
+    .nav_links{
+        display: flex;
+        flex-direction: row;
+        margin-right: 10px;
+    }
+</style>
+<body>
+    <div class="mummy">
+        <div>RISE</div>
+        <div class="nav_stuff">
+            <div class="nav_links">
+                <div>Home</div>
+                <div>About</div>
+                <div>Contact</div>
+            </div>
+            <div>Read More</div>
+        </div>
+    </div>
+</body>
+</html>

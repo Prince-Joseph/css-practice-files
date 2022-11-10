@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+</head>
+<style>
+    *{
+        font-family: 'Inter';
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: #1E1E1E;
+        color: white;
+    }
+    nav{
+        background-color: black;
+        height:15vh;
+        padding-inline: 3rem ;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .logo{
+        font: 2em "Inter";
+        letter-spacing: 1.5rem;
+        font-weight: 600;
+    }
+
+    .nav-links{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        font-weight: 700;
+        font-size: 1.4rem;
+    }
+
+    .btn{
+            display: block;
+            background-color: white;
+            color: black;
+            /* center text */
+            text-align: center;
+            /* padding: 45px 45px 45px 45px; */
+            padding: 2px 45px;
+            opacity: 0.95;
+            text-decoration: none;
+        }
+    .icon{
+        color: white;
+    }
+
+    .icon-div{
+        display: none;
+    }
+
+    @media screen and (max-width:960px){
+        .nav-links{
+            background-color: rgba(0, 0, 0, 0.9);
+            position: absolute;
+            top: 15vh;
+            left: 0;
+            width: 100%;
+
+            flex-direction: column;
+            /* padding: 1rem 3rem 1rem 3rem; */
+            padding: 1rem 3rem;
+        }
+        .nav-links a{
+            position: absolute;
+            top: 8vh;
+            right: 20vw;
+        }
+        .icon-div{
+            display: block;
+        }
+    }
+
+    @media screen and (max-width:600px) {
+        .nav-links a{
+            position: static;
+            display: block;
+        }
+    }
+
+    .hide{
+        display: none !important;
+    }
+
+</style>
+<body>
+    <nav>
+        <p class="logo">RISE</p>
+
+        <div class="nav-links">
+            <div>Home</div>
+            <div>About</div>
+            <div>Contact</div>
+            <a href="#" class="btn">READ MORE</a>
+        </div>
+        <div class="icon-div">
+            <i class="icon fa-solid fa-bars"></i>
+        </div>
+
+    </nav>
+</body>
+</html>

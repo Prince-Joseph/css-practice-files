@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Navbar-sukanya</title>
+    </head>
+    <style>
+        body{
+            background-color:black;
+            height:12vh;
+            color:White;
+        }
+        nav{
+            margin-top:30px;
+            display:flex;
+            padding-inline:3px;
+            align-items:center;
+        }
+        .read{
+            font-size:2rem;
+            font-family:"Inter";
+            position:absolute;
+            font-weight:600px;
+            text-align: center;
+        }
+        .nav_2{
+            position:absolute;
+            
+        }
+    </style>
+    <body>
+    <nav>
+        <div class="read">RISE
+        </div>
+        <div class ="nav_2">
+            <p></p>Home</p>
+            <p>About</p>
+            <p>Contact</p>
+            <button="readmore">Readmore</button>
+        </div>
+        <div class="">
+    </body>

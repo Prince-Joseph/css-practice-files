@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layouts</title>
+</head>
+<style>
+    /* div{
+        background-color: pink;
+        margin:5px;
+        display: block;
+    }
+    span{
+        background-color: pink;
+        margin:5px;
+        display: inline-block;
+        width: 20%;
+    }
+     body :nth-child(2){
+        display: none;
+    } */
+    .active:hover{
+        background-color: red;
+        display: none;
+    }
+    .flex{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: stretch;
+
+        height: 200px;
+        background-color: pink;
+
+
+
+    }
+    .flex > div {
+        border: 2px solid black;
+        order: 5;
+        flex-grow: 1;
+    }
+
+    .iwannaBfirst{
+        order: 100;
+        flex-grow: 2;
+        flex-shrink: 2;
+    }
+    .content{
+        border: 2px solid black;
+        height: 200px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+<body>
+    <div class="active">hello</div>
+    <div>Prince</div>
+    <div>kALYAN</div>
+    <div>___</div>
+    <span>hi</span>
+    <span>hi</span>
+    <span>hi</span>
+    <span>hi</span>
+    <span>hi</span>
+    <span>hi</span>
+
+    <div>
+        <div class="content">
+            Pruince
+        </divclas>
+    </div>
+ <hr>
+    <div class="flex">
+        <div>Hello1</div>
+        <div>Hello2</div>
+        <div class="iwannaBfirst">Hello3</div>
+        <div>Hello4</div>
+        <div>Hello5</div>
+    </div>
+</body>
+
+</html>

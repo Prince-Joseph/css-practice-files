@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reference</title>
+</head>
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="fixit">
+    call on whatsapp</div>
+    <div class="stickit">
+    sticky</div>
+<div class="parent">
+    <div class="box1">
+        box1
+    </div>
+    <div class="box2">
+        box2
+    </div>
+    <div class="box3">
+        box3
+    </div>
+</div>
+    <style>
+        .stickit{
+            position: sticky;
+            z-index: 5;
+            top: 0px;
+            background-color: darkgreen;
+        }
+        .fixit{
+            position: fixed;
+            z-index: 55;
+            bottom: 0;
+            right: 25px;
+            background-color: blueviolet;
+        }
+        .parent{
+            position: relative;
+            height: 100vh;
+            background-color: aquamarine;
+        }
+        .box1{
+            position: absolute;
+            width: 50px;
+            bottom: 50px;
+            right: 25px;
+            background-color: red;
+        }
+        .box2{
+            position: absolute;
+            width: 50px;
+            top:30px;
+            background-color: lavender;
+        }
+        .box3{
+            position: absolute;
+            width: 50px;
+            bottom: 50px;
+            background-color: yellow;
+        }
+
+    </style>
+</body>
+</html>
