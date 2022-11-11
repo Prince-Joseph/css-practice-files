@@ -4,26 +4,24 @@
     <meta charset="UTF-8">
     <title>bar</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+  <!-- <link rel="stylesheet" href="https://fontawesome.com/v4/icon/bars"> -->
+  
   </head>
         <style>
             body{
+            background-size:100%;
             background-color:black;
             height:10vh;
             color:white;
-
-
-
-
-            }
+                                                                           }
             nav{
                 margin-top:30px;
                 display:flex;
                justify-content:space-between;
                 padding-inline:3px;
                 align-items:center;
-
-
+                
+                
             }
              .rise{
              font:2em "Inter";
@@ -32,22 +30,52 @@
             font-weight:700;
             font:500px;
             text-align: center;
-
+               
                 /* justify-content:space-between; */
             }
             .bar{
             position: absolute;
-            right:20px;
+            right:0px;
                 display:flex;
                 justify-content:flex-end;
                 gap:2rem;
+                
             }
             .readmore{
                 display:block;
                 text-align:center;
              }
-
-
+           img{
+               position:absolute;
+               margin-top:35px;
+               /*height: 55px;
+               width: 75px;
+               margin-left: 150px;
+               margin-right: 0px;*/
+           }
+           .Rise2{
+               position: absolute;
+               margin-top:29rem;
+               font-weight:900;
+               font:5em "Inter";
+               right:40px;
+               letter-spacing:120px;
+               text-align:center;
+           }
+           .last{
+                position: absolute;
+               margin-top:50rem;
+               text-align:center;
+               margin-left:22rem;
+               font:2em "Inter";
+           }
+           @media screen and (max-width:1500px)
+           {
+            .icon-div{
+        display: none;
+                }
+           }
+            
             @media screen and (max-width:960px){
     .bar{
         background-color:black;
@@ -58,34 +86,57 @@
         flex-direction: column;
         padding: 1rem;
         gap:1rem
+      
+    } 
+   
+ 
 
-    }
-
-.icon-div{
-    display: block ;
-}
 }
 @media screen and (max-width:600px){
     .bar{
         background-color: red;
         top:7vh;
     }
+    .icon-div{
+
+    display: block;
+    }
 }
+   .hide{
+    display: none !important;
+   }
 
         </style>
         <body>
 <nav>
      <div class="rise"> RISE </div>
-     <div class="bar">
+   
+     <div>
+         <img src="https://images.pexels.com/photos/1534604/pexels-photo-1534604.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="no pic"  />
+         <p class="Rise2">
+           RISE
+         </p>
+         <p Class="last"> EMERGENCE OF NEW ERA</p>
+     </div>
+       <div id="nav-links" class="bar hide">
          <p >Home</p>
          <p>About </p>
          <p>Contact </p>
          <button class="readmore">Readmore</button>
      </div>
-     <div class ="icon-div">
+     <div id="menu" class ="icon-div">
          <i class="fa fa-bars" aria-hidden="true"></i>
      </div>
-
+    <script>
+        const ham_menu = document.getElementById("menu");
+        const all_nav = document.getElementById("nav-links");
+        function doit(){
+            console.log(all_nav.classList);
+            all_nav.classList.toggle("hide");
+        }
+        // doit();
+        ham_menu.addEventListener('click',doit);
+    </script>
 </nav>
 </body>
 </html>

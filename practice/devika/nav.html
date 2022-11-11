@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- <link rel="stylesheet" href="https://fontawesome.com/v4/icon/bars"> -->
+</head>
+<style>
+    body{
+        background-color: black;
+        height: 1ovh;
+        color: white;
+
+    }
+    nav{
+        margin-top: 30px;
+        display: flex;
+    }
+    .rise{
+        
+    position: absolute;
+    font-weight: 700;
+    letter-spacing: 1rem;
+    font: 500px;
+    font: 2em"inter";
+    text-align: center;
+
+    }
+
+    .bar{
+        position: absolute;
+        display:flex;
+        gap:2rem;
+        right: 20px;
+        }
+        .readmore{
+            display: block;
+            text-align: center;
+        }
+        .icon-div{
+            display: none;
+        }
+        @media screen and (max-width:960px) {
+            .bar{
+                position: absolute;
+                flex-direction: column;
+                top:6.5vh;
+                left: 0;
+                width: 25%;
+                padding: 1rem;
+            }
+        .icon-div{
+            display: block;
+            position: absolute;
+        gap:2rem;
+        right: 20px; 
+        }
+        }
+        @media screen and (max-width:600px){
+    .bar{
+        background-color: red;
+        top:7vh;
+    }
+}
+</style>
+<body>
+    <nav>
+        <div class="rise">RISE</div>
+        <div class="bar">
+          <p>Home</p>
+          <p>About</p>
+          <p>Contact</p> 
+          <button class="readmore">Readmore</button>
+        </div>
+        <div class ="icon-div">
+            <i class="fa fa-bars"></i>
+        </div>
+    </nav>
+    <script>
+        const ham_menu =document.getElementById("menu");
+        const all_nav = document.getElementById("nav-")
+    </script>
+</body>

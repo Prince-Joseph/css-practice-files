@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav_shiva</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+</head>
+<style>
+*{
+ font-family: 'Times New Roman'
+ margin:0;
+ padding:0;
+ }
+
+body{
+background-color: black;
+color:white;
+}
+
+nav{
+background-color:black;
+height:20vh;
+display:flex;
+justify-content:space-between;
+padding-inline: 2rem;
+align-items:center;
+}
+
+.logo{
+letter-spacing: 2rem;
+font-size:40px;
+}
+
+.items{
+display:flex;
+gap:20px;
+font-size:20px;
+}
+
+.button{
+background-color:black;
+color:white;
+padding:2px 45px;
+text-align:centre;
+padding-right:20px ;
+text-decoration:none;
+opacity:0.50;
+
+}
+.icon-div{
+    display: none;
+}
+
+@media screen and (max-width:900px)
+{
+    .items{
+        position:absolute;
+        display:flex;
+        flex-direction:column;
+        top:100px;
+        left:0;
+
+        justify-content: flex-start;
+    }
+    .icon-div{
+    display: block;
+    }
+}
+
+
+
+
+
+</style>
+<body>
+ <nav>
+    <b class="logo"> RISE </b>
+
+    <div class="items">
+    <div>Home</div>
+    <div>About</div>
+    <div>Contact</div>
+    <a href="#" class="button">READ MORE</a>
+    </div>
+    
+    <div id="menu" class="icon-div">
+        <i class="icon fa-solid fa-bars"></i>
+    </div>
+</nav>
+</body>
+</html>
