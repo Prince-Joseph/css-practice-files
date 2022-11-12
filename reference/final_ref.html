@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RISE</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+  * {
+    font-family: 'Inter';
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+  }
+
+  nav {
+    background-color: black;
+    color: white;
+
+    padding: 1rem 3rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+
+  .logo {
+    font-size: 36px;
+    letter-spacing: 32.96px;
+  }
+
+  .nav-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+  }
+  @keyframes saturation-slow {
+    /* 0% {
+      // animations are memory intensive
+      filter: saturate(1);
+    }
+
+    25% {
+      filter: saturate(2);
+    } */
+
+    50% {
+      filter: saturate(1);
+    }
+
+    /* 75% {
+      filter: saturate(0);
+    }
+
+    100% {
+      filter: saturate(1);
+    } */
+  }
+
+  .img-container {
+    width: 100%;
+    position: relative;
+    top: 0;
+    /* transition: all 3s; */
+    animation-name: saturation-slow;
+    animation-duration: 1s;
+    animation-iteration-count: 2;
+  }
+
+  .img-container:hover {
+    filter: saturate(2);
+    transition: all 3s;
+
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    object-position: 0 -15rem;
+    height: 85vh;
+    filter: brightness(69%);
+  }
+
+  .ham {
+    display: none;
+  }
+
+  .hide {
+    display: none !important;
+  }
+
+  .btn {
+    padding: 0.5rem 1rem;
+    background-color: white !important;
+    color: black;
+  }
+
+  .text-float {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    padding: 10px 0 0 70px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 88px;
+    letter-spacing: 82px;
+  }
+
+  .end {
+    text-align: center;
+    padding: 2rem;
+  }
+
+  @media screen and (max-width:800px) {
+    .ham {
+      display: block;
+    }
+
+    .nav-container {
+      position: absolute;
+      top: 4.7rem;
+      left: 0;
+      width: 100%;
+      z-index: 10;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1.5rem 3rem 3rem 3rem;
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .nav-container a {
+      background-color: unset;
+    }
+
+    .btn {
+      padding: 0.5rem 1rem;
+      background-color: white;
+      color: black;
+    }
+
+    .img-container {
+      height: 50vh;
+    }
+
+    img {
+      height: 50vh;
+      object-position: 0 0;
+      object-fit: cover;
+      font-size: 64px;
+      letter-spacing: 64px;
+    }
+
+  }
+  @media(max-width:520px){
+    img{
+      object-position: 50%;
+    }
+    .text-float{
+      font-size: 4rem;
+      letter-spacing: 4rem;
+    }
+  }
+</style>
+
+<body>
+  <nav>
+    <div class="logo">RISE</div>
+    <div class="nav-container" id="navC">
+      <a>Home</a>
+      <a>About</a>
+      <a>Contact</a>
+      <a class="btn white">Read More</a>
+    </div>
+    <div id="ham" class="ham"><i class="fa fa-bars"></i></div>
+  </nav>
+  <div class="img-container">
+    <img
+      src="https://images.pexels.com/photos/1534604/pexels-photo-1534604.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      alt="car">
+    <div class="text-float">RISE</div>
+  </div>
+  <div class="end">
+    EMERGENCE OF NEW ERA
+  </div>
+</body>
+
+</html>

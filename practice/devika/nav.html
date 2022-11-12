@@ -31,7 +31,7 @@
     .bar{
         position: absolute;
         display:flex;
-        gap:2rem;
+        gap:1.8rem;
         right: 20px;
         }
         .readmore{
@@ -57,10 +57,13 @@
         right: 20px; 
         }
         }
-        @media screen and (max-width:600px){
+        @media screen and (max-width:550px){
     .bar{
-        background-color: red;
-        top:7vh;
+        background-color:rgb(140, 220, 243);
+        top:12vh;
+        height:220px ;
+        color: black;
+        font-weight: bold;
     }
 }
 </style>
@@ -78,7 +81,13 @@
         </div>
     </nav>
     <script>
-        const ham_menu =document.getElementById("menu");
-        const all_nav = document.getElementById("nav-")
+       const ham_menu = document.getElementById("menu");
+       const all_nav = document .getElementById("nav-link-const");
+       function hidev(){
+        all_nav.classList.toggle("hide");
+       }
+       hidev();
+       ham_menu.addEventListener('click',hidev);
     </script>
 </body>
+</html>

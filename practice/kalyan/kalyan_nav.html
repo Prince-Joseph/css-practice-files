@@ -10,11 +10,12 @@
     <title>Nav Bar</title>
 </head>
 <body>
+
     <nav>
 
         <p class = "rise">RISE</p>
 
-        <div class="box2">
+        <div id = "links" class="box2">
             <div>Home</div>
             <div>About</div>
             <div>Contact</div>
@@ -22,9 +23,22 @@
         </div>
 
         <div class="divicon">
-            <i class="fa-solid fa-bars"></i>
+            <i id = "menu" class="fa-solid fa-bars"></i>
         </div>
-        
     </nav>
+
 </body>
+
+<script>
+    const ham_menu = document.getElementById("menu");
+    const all_nav = document.getElementById("links");
+
+    function hidebar() {
+        all_nav.classList.toggle("hide");
+    }
+
+    ham_menu.addEventListener("click",hidebar);
+    
+</script>
+
 </html>

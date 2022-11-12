@@ -14,12 +14,17 @@
             box-sizing:border-box;
             font-family: 'Inter';
         }
+        nav{
+            position:relative;
+            z-index:20;
+        }
         .content{
             background-color: black;
             display:flex;
             flex-direction:row;
             align-items: center;
             justify-content: space-between;
+            width: 100%;
             height:15vh;
             padding:5%;
         }
@@ -31,6 +36,7 @@
             font-size: 2.5rem;
             font-weight: bold;
         }
+
         .nav_content{
             display:flex;
             flex-direction:row;
@@ -38,14 +44,17 @@
             justify-content:space-evenly;
             gap:3em;
             font-size:1rem;
-            
+
         }
         .content i{
             display:none;
         }
         .nav_content .item{
             color:white;
-            
+
+        }
+        body{
+            width:100%;
         }
         button{
             padding:1%;
@@ -53,7 +62,38 @@
             font-size: 0.7rem;
             width:7rem;
         }
-        @media(max-width:900px){
+        .white{
+            color: white;
+        }
+        .hide{
+            display:none !important;
+        }
+        img{
+            width:100%;
+            object-fit: cover;
+            object-position: 0 -15rem;
+        }
+        .main{
+            position:relative;
+        }
+        .main p{
+            text-align: center;
+            padding:10%;
+            padding-left:15%;
+            letter-spacing: 10rem;
+            z-index: 15;
+            width:100%;
+            height:100%;
+            position:absolute;
+            top:0;
+            left:0;
+            color:white;
+            font-family: 'Inter';
+            font-size:5rem;
+            font-weight: bold;
+        }
+        @media(max-width:969px){
+            
             .nav_content{
                 position:absolute;
                 top:15vh;
@@ -69,13 +109,13 @@
             .content i{
                 display:block;
                 color:white;
-                /* align-items: center; */
+            }
+            .main p{
+                font-size: 40px;
+                letter-spacing:3rem;
+
             }
         }
-        .white{
-            color: white;
-        }
-        
     </style>
 </head>
 <body>
@@ -85,16 +125,31 @@
                 <p>RISE</p>
             </div>
 
-            <div class="nav_content">
+            <div class="nav_content" id="nav_bar">
                 <div class="item">Home</div>
                 <div class="item">About</div>
                 <div class="item">Contact</div>
                 <button>READ MORE</button>
             </div>
-            
-            <i class="fa-solid fa-bars white"></i>
+
+            <i class="fa-solid fa-bars white" id="menu"></i>
         </div>
     </nav>
-    
+    <div class="main">
+        <img src="https://images.pexels.com/photos/1534604/pexels-photo-1534604.jpeg?cs=srgb&dl=pexels-shukhrat-umarov-1534604.jpg&fm=jpg&_gl=1*1lyz54m*_ga*MTg4NjYxMzUyNy4xNjY3MjI3MTU0*_ga_8JE65Q40S6*MTY2ODI2MjMzNS4yLjAuMTY2ODI2MjMzNS4wLjAuMA.." alt="">
+        <p>RISE</p>
+
+    </div>
+
 </body>
+<script>
+    const ham_menu=document.getElementById('menu');
+    const nav1=document.getElementById('nav_bar');
+
+    function hide_nav(){
+        nav1.classList.toggle('hide');
+    }
+    ham_menu.addEventListener('click',hide_nav);
+
+</script>
 </html>
